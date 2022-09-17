@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
-  <rect width="500" height="500" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(255, 255, 255);"/>
-  <path d="M 194 129 L 259.966 194.786 L 106 195 L 106 305 L 260 305 L 260 305.249 L 259.966 305.215 L 194 371 L 105.751 371 L 105.786 370.966 L 40 305 L 40 195 L 105.786 129.034 L 105.751 129 L 194 129 Z" style="paint-order: fill; stroke: rgb(255, 255, 255); stroke-width: 4px;"/>
-  <path d="M 304 371 L 238.034 305.215 L 392 305 L 392 283 L 326 283 L 260 217 L 260 195 L 325.786 129.034 L 325.751 129 L 480 129 L 480 129.249 L 479.966 129.215 L 414 195 L 326 195 L 326 217 L 392 217 L 458 283 L 458 305 L 392.215 370.966 L 392.249 371 L 304 371 Z" style="stroke: rgb(255, 255, 255); stroke-width: 4px;"/>
-</svg>
