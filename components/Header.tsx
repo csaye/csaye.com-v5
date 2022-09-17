@@ -5,7 +5,7 @@ import styles from '../styles/components/Header.module.scss';
 export default function Header() {
   return (
     <div className={styles.container}>
-      <a href="#home">
+      <a className={styles.logo} href="#home">
         <Image
           src="/img/logo.svg"
           width="64"
@@ -15,9 +15,9 @@ export default function Header() {
       </a>
       <h1>Cooper Saye</h1>
       <span style={{ flexGrow: 1 }} />
-      <a href="#home">Home</a>
-      <a href="#skillset">Skillset</a>
-      <a href="#projects">Projects</a>
+      <a className={styles.link} href="#home">Home</a>
+      <a className={styles.link} href="#skillset">Skillset</a>
+      <a className={styles.link} href="#projects">Projects</a>
     </div>
   );
 }
