@@ -1,26 +1,25 @@
 .container {
   display: flex;
   align-items: center;
-  padding: 0 40px;
   height: 80px;
-  border-bottom: 2px solid #000;
   position: sticky;
   top: 0;
   z-index: 1;
 
-  >.logo {
-    margin-right: 10px;
-  }
-
   >h1 {
     margin: 0;
+    margin-left: 24px;
   }
 
-  >.link {
+  >a {
     margin-left: 30px;
 
     &:hover {
       text-decoration: underline;
+    }
+
+    &:last-of-type {
+      margin-right: 32px;
     }
   }
 }
