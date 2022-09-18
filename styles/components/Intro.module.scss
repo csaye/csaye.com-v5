@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  height: calc(100vh - var(--header));
+
+  >.hello {
+    padding: 60px;
+
+    >h1 {
+      font-weight: 400;
+      font-size: 64px;
+      margin: 0;
+    }
+
+    >p {
+      display: flex;
+      align-items: center;
+
+      >svg {
+        margin-right: 4px;
+      }
+    }
+  }
+}
