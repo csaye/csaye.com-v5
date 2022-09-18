@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: var(--header);
   position: sticky;
   top: 0;
   z-index: 1;
