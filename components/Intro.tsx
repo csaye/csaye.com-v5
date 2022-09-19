@@ -48,6 +48,15 @@ export default function Intro(props: Props) {
         <p><Code />Computer Science Student</p>
         <p><School />University of Michigan</p>
         <p><EmojiEvents />Congressional App Challenge Winner</p>
+        <Link href="https://github.com/csaye">
+          <GitHub />csaye
+        </Link>
+        <Link href="https://linkedin.com/in/coopersaye">
+          <LinkedIn />coopersaye
+        </Link>
+        <Link href="https://twitter.com/coopercomputer">
+          <Twitter />CooperComputer
+        </Link>
       </div>
       <div className={styles.latest}>
         <p>Check out my latest work!</p>
