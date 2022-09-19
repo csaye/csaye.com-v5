@@ -44,10 +44,14 @@ export default function Intro(props: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.hello}>
-        <h1>Hi!<br />I&apos;m Cooper Saye.</h1>
-        <p><Code />Computer Science Student</p>
-        <p><School />University of Michigan</p>
-        <p><EmojiEvents />Congressional App Challenge Winner</p>
+        <h1>
+          <b>Hey there!</b><br />
+          I&apos;m Cooper Saye.
+        </h1>
+        <hr />
+        <p className={styles.bio}>
+        </p>
+        <hr />
         <Link href="https://github.com/csaye">
           <GitHub />csaye
         </Link>
