@@ -26,6 +26,14 @@ function Link(props: LinkProps) {
   );
 }
 
+const tooltipProps = {
+  arrow: true,
+  componentsProps: {
+    tooltip: { sx: { background: '#444' } },
+    arrow: { sx: { color: '#444' } }
+  }
+};
+
 export default function Intro() {
   return (
     <div className={styles.container}>
