@@ -96,6 +96,18 @@ export default function Intro(props: Props) {
           >
             <u>University of Michigan College of Engineering</u>
           </Tooltip>
+          . I&apos;m a big fan of{' '}
+          <Tooltip
+            title={
+              <p style={{ fontSize: '16px', margin: '8px' }}>
+                Creative coding: coding as an art
+              </p>
+            }
+            {...tooltipProps}
+          >
+            <u>creative coding</u>
+          </Tooltip>
+          {' '}and most of my projects have a focus on the web.
         </p>
         <hr />
         <Link href="https://github.com/csaye">
