@@ -10,6 +10,16 @@ function Link(props: LinkProps) {
   const { href, children } = props;
 
   return (
+    <p className={styles.link}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ArrowForward className={styles.arrow} />
+        <span className={styles.content}>{children}</span>
+      </a>
+    </p>
   );
 }
 
