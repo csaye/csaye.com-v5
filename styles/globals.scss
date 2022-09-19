@@ -21,3 +21,11 @@ a {
 button {
   cursor: pointer;
 }
+
+.url {
+  text-decoration: underline;
+
+  &:hover {
+    color: #2196f3;
+  }
+}
