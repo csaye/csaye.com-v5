@@ -50,6 +50,23 @@ export default function Intro(props: Props) {
         </h1>
         <hr />
         <p className={styles.bio}>
+          I&apos;m a{' '}
+          <Tooltip
+            title={
+              <p style={{ fontSize: '16px', margin: '8px' }}>
+                Read about the contest here:<br />
+                <a
+                  className="url"
+                  href="https://congressionalappchallenge.us"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >CongressionalAppChallenge.us</a>
+              </p>
+            }
+            {...tooltipProps}
+          >
+            <u>Congressional App Challenge Winner</u>
+          </Tooltip>
         </p>
         <hr />
         <Link href="https://github.com/csaye">
