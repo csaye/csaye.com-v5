@@ -67,6 +67,17 @@ export default function Intro(props: Props) {
           >
             <u>Congressional App Challenge Winner</u>
           </Tooltip>
+          {' '}and{' '}
+          <Tooltip
+            title={
+              <p style={{ fontSize: '16px', margin: '8px' }}>
+                Slash hobbyist!
+              </p>
+            }
+            {...tooltipProps}
+          >
+            <u>computer science student</u>
+          </Tooltip>
         </p>
         <hr />
         <Link href="https://github.com/csaye">
