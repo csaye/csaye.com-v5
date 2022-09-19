@@ -1,4 +1,7 @@
-import { Code, EmojiEvents, School } from '@mui/icons-material';
+import { ArrowDownward, ArrowForward, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
+import { Tooltip } from '@mui/material';
+import Image from 'next/image';
+import { ReactNode } from 'react';
 import styles from '../styles/components/Intro.module.scss';
 
 type LinkProps = {
