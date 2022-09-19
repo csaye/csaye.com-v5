@@ -78,6 +78,24 @@ export default function Intro(props: Props) {
           >
             <u>computer science student</u>
           </Tooltip>
+          {' '}at the{' '}
+          <Tooltip
+            title={
+              <p style={{ fontSize: '16px', margin: '8px' }}>
+                <a
+                  className="url"
+                  href="http://michiganengineer.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MichiganEngineer.com
+                </a>
+              </p>
+            }
+            {...tooltipProps}
+          >
+            <u>University of Michigan College of Engineering</u>
+          </Tooltip>
         </p>
         <hr />
         <Link href="https://github.com/csaye">
