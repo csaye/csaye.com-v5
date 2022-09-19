@@ -69,7 +69,25 @@
       margin: 16px 0;
     }
 
+    >.player {
+      image-rendering: pixelated;
+      cursor: pointer;
+
+      &:not(:hover) {
+        >span:last-of-type {
+          opacity: 0 !important;
+          position: absolute !important;
+        }
       }
+
+      &:hover {
+        >span:first-of-type {
+          opacity: 0 !important;
+          position: absolute !important;
+        }
+      }
+    }
+
     @media (max-width: 1199.98px) {
       display: none;
     }
