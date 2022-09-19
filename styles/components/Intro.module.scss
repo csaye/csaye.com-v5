@@ -1,14 +1,45 @@
 .container {
   display: flex;
   height: calc(100vh - var(--header));
+  padding: 60px;
 
   >.hello {
-    padding: 60px;
+    width: 50%;
+    position: relative;
 
     >h1 {
       font-weight: 400;
       font-size: 64px;
       margin: 0;
+
+      >b {
+        font-weight: 600;
+      }
+    }
+
+    >hr {
+      border: 0;
+      border-bottom: 1px solid #999;
+
+      &::after {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, calc(-50% + 0.5px));
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #222;
+        border: 4px solid #fff;
+        border-radius: 50%;
+      }
+    }
+
+    >.bio {
+      line-height: 32px;
+
+      u {
+        cursor: help;
+      }
     }
 
     .link {
@@ -51,6 +82,13 @@
         }
       }
     }
+
+    @media (max-width: 1199.98px) {
+      width: 100%;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+  }
 
   >.latest {
     width: 50%;
