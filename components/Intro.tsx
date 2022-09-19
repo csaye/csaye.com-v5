@@ -50,6 +50,25 @@ export default function Intro(props: Props) {
         <p><EmojiEvents />Congressional App Challenge Winner</p>
       </div>
       <div className={styles.latest}>
+        <p>Check out my latest work!</p>
+        <ArrowDownward />
+        <div className={styles.player}>
+          <Image
+            src="/img/player.png"
+            width="384"
+            height="384"
+            alt="player.png"
+            unoptimized
+            priority
+          />
+          <Image
+            src="/img/player2.png"
+            width="384"
+            height="384"
+            alt="player.png"
+            unoptimized
+          />
+        </div>
       </div>
       <button
         className={styles.scrollButton}
