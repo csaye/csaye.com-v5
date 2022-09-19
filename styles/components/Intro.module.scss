@@ -61,4 +61,24 @@
       }
     }
   }
+
+  >.scrollButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 32px;
+
+    &:hover {
+      color: #2196f3;
+      border-color: #2196f3;
+    }
+  }
 }
