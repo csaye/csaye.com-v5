@@ -34,7 +34,13 @@ const tooltipProps = {
   }
 };
 
-export default function Intro() {
+type Props = {
+  introScroll: () => void;
+};
+
+export default function Intro(props: Props) {
+  const { introScroll } = props;
+
   return (
     <div className={styles.container}>
       <div className={styles.hello}>
@@ -45,6 +51,12 @@ export default function Intro() {
       </div>
       <div className={styles.latest}>
       </div>
+      <button
+        className={styles.scrollButton}
+        onClick={introScroll}
+      >
+        <ArrowDownward />
+      </button>
     </div>
   );
 }
