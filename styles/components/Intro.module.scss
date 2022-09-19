@@ -11,6 +11,47 @@
       margin: 0;
     }
 
+    .link {
+      >a {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+
+        .arrow {
+          opacity: 0;
+          transition: 0.25s;
+          transform: scale(0);
+          position: absolute;
+        }
+
+        .content {
+          display: flex;
+          align-items: center;
+          position: relative;
+          left: 0;
+          transition: 0.25s;
+          padding-right: -24px;
+
+          >svg {
+            margin-right: 4px;
+          }
+        }
+
+        &:hover {
+          color: #2196f3;
+
+          .content {
+            left: 24px;
+          }
+
+          .arrow {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
     >p {
       display: flex;
       align-items: center;
