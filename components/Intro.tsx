@@ -1,6 +1,18 @@
 import { Code, EmojiEvents, School } from '@mui/icons-material';
 import styles from '../styles/components/Intro.module.scss';
 
+type LinkProps = {
+  href: string;
+  children: ReactNode;
+};
+
+function Link(props: LinkProps) {
+  const { href, children } = props;
+
+  return (
+  );
+}
+
 export default function Intro() {
   return (
     <div className={styles.container}>
