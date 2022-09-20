@@ -6,10 +6,8 @@ export default function Header() {
       <h1>Cooper Saye</h1>
       <span style={{ flexGrow: 1 }} />
       <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skillset">Skillset</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#skillset">Skillset</a>
     </div>
   );
 }

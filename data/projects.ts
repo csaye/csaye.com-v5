@@ -1,10 +1,10 @@
-type Project = {
+export type Project = {
   title: string;
   about: string;
   image: string;
 };
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: 'Bridge',
     about: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',

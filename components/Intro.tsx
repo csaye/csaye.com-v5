@@ -123,7 +123,10 @@ export default function Intro(props: Props) {
       <div className={styles.latest}>
         <p>Check out my latest work!</p>
         <ArrowDownward />
-        <div className={styles.player}>
+        <div
+          className={styles.player}
+          onClick={introScroll}
+        >
           <Image
             src="/img/player.png"
             width="384"

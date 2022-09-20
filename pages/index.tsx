@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
+import Projects from '../components/Projects';
 import styles from '../styles/pages/Index.module.scss';
 
 export default function Index() {
@@ -16,6 +17,7 @@ export default function Index() {
       <Header />
       <Intro introScroll={introScroll} />
       <span ref={scrollRef} />
+      <Projects />
     </div>
   );
 }
