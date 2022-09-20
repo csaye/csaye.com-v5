@@ -1,0 +1,6 @@
+.container {
+  >.scrollRef {
+    position: relative;
+    bottom: var(--header);
+  }
+}
