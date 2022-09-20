@@ -12,6 +12,14 @@ export default function Project(props: Props) {
 
   return (
     <div className={styles.container}>
+      <h1>{title}</h1>
+      <Image
+        src={`/img/projects/${image}`}
+        width="128"
+        height="128"
+        alt={image}
+      />
+      <p>{about}</p>
     </div>
   );
 }
