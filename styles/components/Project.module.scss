@@ -1,0 +1,16 @@
+.container {
+  margin: 20px;
+  background: #efefef;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 8px;
+
+  >h1 {
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+
+  >p {
+    margin: 8px 0 0 0;
+  }
+}
