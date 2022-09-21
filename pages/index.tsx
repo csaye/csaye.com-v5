@@ -9,10 +9,10 @@ export default function Index() {
   const projectsScrollRef = useRef<HTMLSpanElement>(null);
   const skillsetScrollRef = useRef<HTMLSpanElement>(null);
 
-  // scrolls user to first section
-  function introScroll() {
-    scrollRef.current?.scrollIntoView();
-  }
+  // section scroll functions
+  const introScroll = () => introScrollRef.current?.scrollIntoView();
+  const projectsScroll = () => projectsScrollRef.current?.scrollIntoView();
+  const skillsetScroll = () => skillsetScrollRef.current?.scrollIntoView();
 
   return (
     <div className={styles.container}>
