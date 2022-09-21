@@ -35,11 +35,11 @@ const tooltipProps = {
 };
 
 type Props = {
-  introScroll: () => void;
+  projectsScroll: () => void;
 };
 
 export default function Intro(props: Props) {
-  const { introScroll } = props;
+  const { projectsScroll } = props;
 
   return (
     <div className={styles.container}>
@@ -125,7 +125,7 @@ export default function Intro(props: Props) {
         <ArrowDownward />
         <div
           className={styles.player}
-          onClick={introScroll}
+          onClick={projectsScroll}
         >
           <Image
             src="/img/player.png"
@@ -146,7 +146,7 @@ export default function Intro(props: Props) {
       </div>
       <button
         className={styles.scrollButton}
-        onClick={introScroll}
+        onClick={projectsScroll}
       >
         <ArrowDownward />
       </button>
