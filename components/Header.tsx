@@ -14,13 +14,19 @@ export default function Header(props: Props) {
 
   // on start
   useEffect(() => {
+    // called on page scroll
+    function onScroll() {
+      setIsTop(!window.scrollY);
+    }
     // set up scroll event listener
     addEventListener('scroll', onScroll);
     return () => removeEventListener('scroll', onScroll);
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={
+      isTop ? styles.container : `${styles.container} ${styles.top}`
+    }>
       <h1>Cooper Saye</h1>
       <span style={{ flexGrow: 1 }} />
       <a href="#home">Home</a>
