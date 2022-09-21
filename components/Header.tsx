@@ -29,9 +29,9 @@ export default function Header(props: Props) {
     }>
       <h1>Cooper Saye</h1>
       <span style={{ flexGrow: 1 }} />
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#skillset">Skillset</a>
+      <button onClick={introScroll}>Home</button>
+      <button onClick={projectsScroll}>Projects</button>
+      <button onClick={skillsetScroll}>Skillset</button>
     </div>
   );
 }
