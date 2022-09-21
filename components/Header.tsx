@@ -1,6 +1,17 @@
+import { useEffect, useState } from 'react';
 import styles from '../styles/components/Header.module.scss';
 
-export default function Header() {
+type Props = {
+  introScroll: () => void;
+  projectsScroll: () => void;
+  skillsetScroll: () => void;
+};
+
+export default function Header(props: Props) {
+  const { introScroll, projectsScroll, skillsetScroll } = props;
+
+  const [isTop, setIsTop] = useState(true);
+
   return (
     <div className={styles.container}>
       <h1>Cooper Saye</h1>
