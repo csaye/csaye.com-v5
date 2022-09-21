@@ -5,7 +5,9 @@ import Projects from '../components/Projects';
 import styles from '../styles/pages/Index.module.scss';
 
 export default function Index() {
-  const scrollRef = useRef<HTMLSpanElement>(null);
+  const introScrollRef = useRef<HTMLSpanElement>(null);
+  const projectsScrollRef = useRef<HTMLSpanElement>(null);
+  const skillsetScrollRef = useRef<HTMLSpanElement>(null);
 
   // scrolls user to first section
   function introScroll() {
@@ -20,7 +22,10 @@ export default function Index() {
         className={styles.scrollRef}
         ref={scrollRef}
       />
+      <span className={styles.scrollRef} ref={introScrollRef} />
+      <span className={styles.scrollRef} ref={projectsScrollRef} />
       <Projects />
+      <span className={styles.scrollRef} ref={skillsetScrollRef} />
     </div>
   );
 }
