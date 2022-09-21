@@ -16,13 +16,13 @@ export default function Index() {
 
   return (
     <div className={styles.container}>
-      <Header />
-      <Intro introScroll={introScroll} />
-      <span
-        className={styles.scrollRef}
-        ref={scrollRef}
+      <Header
+        introScroll={introScroll}
+        projectsScroll={projectsScroll}
+        skillsetScroll={skillsetScroll}
       />
       <span className={styles.scrollRef} ref={introScrollRef} />
+      <Intro projectsScroll={projectsScroll} />
       <span className={styles.scrollRef} ref={projectsScrollRef} />
       <Projects />
       <span className={styles.scrollRef} ref={skillsetScrollRef} />
