@@ -12,6 +12,13 @@ export default function Header(props: Props) {
 
   const [isTop, setIsTop] = useState(true);
 
+  // on start
+  useEffect(() => {
+    // set up scroll event listener
+    addEventListener('scroll', onScroll);
+    return () => removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
     <div className={styles.container}>
       <h1>Cooper Saye</h1>
