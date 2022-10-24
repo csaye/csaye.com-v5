@@ -1,11 +1,17 @@
 .container {
+  background: #f3f3f3;
+  overflow: auto;
+
   >h1 {
     text-align: center;
+    margin: 32px 0 16px 0;
+    font-size: 48px;
   }
 
   >.projects {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
