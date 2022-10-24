@@ -8,19 +8,21 @@ type Props = {
 
 export default function Project(props: Props) {
   const { project } = props;
-  const { title, about, image } = project;
+  const { title, about, image, buttons } = project;
 
   return (
     <div className={styles.container}>
-      <h1>{title}</h1>
       <div className={styles.image}>
         <Image
           src={`/img/projects/${image}`}
           layout="fill"
           objectFit="contain"
+          placeholder="blur"
+          blurDataURL={`/img/projects/${image}`}
           alt={image}
         />
       </div>
+      <h1>{title}</h1>
       <p>{about}</p>
     </div>
   );
