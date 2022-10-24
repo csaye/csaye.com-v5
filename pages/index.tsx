@@ -1,7 +1,9 @@
 import { useRef } from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
 import Projects from '../components/Projects';
+import Skillset from '../components/Skillset';
 import styles from '../styles/pages/Index.module.scss';
 
 export default function Index() {
@@ -23,9 +25,11 @@ export default function Index() {
       />
       <span className={styles.scrollRef} ref={introScrollRef} />
       <Intro projectsScroll={projectsScroll} />
+      <span className={styles.scrollRef} ref={skillsetScrollRef} />
+      <Skillset />
       <span className={styles.scrollRef} ref={projectsScrollRef} />
       <Projects />
-      <span className={styles.scrollRef} ref={skillsetScrollRef} />
+      <Footer />
     </div>
   );
 }

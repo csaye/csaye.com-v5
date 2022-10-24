@@ -30,8 +30,8 @@ export default function Header(props: Props) {
       <h1>Cooper Saye</h1>
       <span style={{ flexGrow: 1 }} />
       <button onClick={introScroll}>Home</button>
-      <button onClick={projectsScroll}>Projects</button>
       <button onClick={skillsetScroll}>Skillset</button>
+      <button onClick={projectsScroll}>Projects</button>
     </div>
   );
 }
