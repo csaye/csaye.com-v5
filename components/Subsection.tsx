@@ -11,6 +11,16 @@ export default function Subsection(props: Props) {
 
   return (
     <div className={styles.container}>
+      <h3>{title}</h3>
+      <div className={styles.icons}>
+        {
+          icons.map((icon, i) =>
+            <div className={styles.icon} key={i}>
+              {icon}
+            </div>
+          )
+        }
+      </div>
     </div>
   );
 }
