@@ -10,9 +10,16 @@ export default function Section(props: Props) {
   const { section } = props;
   const { title, subsections } = section;
 
-export default function Section() {
   return (
     <div className={styles.container}>
+      <h2>{title}</h2>
+      <div className={styles.subsections}>
+        {
+          subsections.map((subsection, i) =>
+            <Subsection subsection={subsection} key={i} />
+          )
+        }
+      </div>
     </div>
   );
 }
