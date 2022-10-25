@@ -34,3 +34,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# built projects
+/public/calendar
+/public/countdown-tracker
+/public/jamming
+/public/mapmake
+/public/playlist-bot
+/public/simple-store
+/public/sleekscript
+/public/ticket-tracker
+/public/widget-wall
