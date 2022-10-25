@@ -1,5 +1,4 @@
 import { ArrowDownward, ArrowForward, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
-import { Tooltip } from '@mui/material';
 import Image from 'next/image';
 import { ReactNode } from 'react';
 import styles from '../styles/components/Intro.module.scss';
@@ -50,64 +49,11 @@ export default function Intro(props: Props) {
         </h1>
         <hr />
         <p className={styles.bio}>
-          I&apos;m a{' '}
-          <Tooltip
-            title={
-              <p style={{ fontSize: '16px', margin: '8px' }}>
-                Read about the contest here:<br />
-                <a
-                  className="url"
-                  href="https://congressionalappchallenge.us"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >CongressionalAppChallenge.us</a>
-              </p>
-            }
-            {...tooltipProps}
-          >
-            <u>Congressional App Challenge Winner</u>
-          </Tooltip>
-          {' '}and{' '}
-          <Tooltip
-            title={
-              <p style={{ fontSize: '16px', margin: '8px' }}>
-                Slash hobbyist!
-              </p>
-            }
-            {...tooltipProps}
-          >
-            <u>computer science student</u>
-          </Tooltip>
-          {' '}at the{' '}
-          <Tooltip
-            title={
-              <p style={{ fontSize: '16px', margin: '8px' }}>
-                <a
-                  className="url"
-                  href="http://michiganengineer.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  MichiganEngineer.com
-                </a>
-              </p>
-            }
-            {...tooltipProps}
-          >
-            <u>University of Michigan College of Engineering</u>
-          </Tooltip>
-          . I&apos;m a big fan of{' '}
-          <Tooltip
-            title={
-              <p style={{ fontSize: '16px', margin: '8px' }}>
-                Creative coding: coding as an art
-              </p>
-            }
-            {...tooltipProps}
-          >
-            <u>creative coding</u>
-          </Tooltip>
-          {' '}and most of my projects have a focus on the web.
+          I&apos;m a <u>Congressional App Challenge Winner</u> and{' '}
+          <u>computer science student</u> at the{' '}
+          <u>University of Michigan College of Engineering</u>.{' '}
+          I&apos;m a big fan of <u>creative coding</u>{' '}
+          and most of my projects have a focus on the web.
         </p>
         <hr />
         <Link href="https://github.com/csaye">
