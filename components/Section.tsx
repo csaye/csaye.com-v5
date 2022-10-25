@@ -11,7 +11,7 @@ export default function Section(props: Props) {
   const { title, subsections } = section;
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} wipe`}>
       <h2>{title}</h2>
       <div className={styles.subsections}>
         {
