@@ -2,6 +2,8 @@
   display: flex;
   height: calc(100vh - var(--header));
   padding: 60px;
+  min-height: 500px;
+  position: relative;
 
   >.hello {
     width: 50%;
@@ -38,7 +40,7 @@
       line-height: 32px;
 
       u {
-        cursor: help;
+        text-decoration-style: dotted;
       }
     }
 
@@ -69,7 +71,7 @@
         }
 
         &:hover {
-          color: #2196f3;
+          color: var(--highlight);
 
           .content {
             left: 24px;
@@ -146,8 +148,8 @@
     border-radius: 32px;
 
     &:hover {
-      color: #2196f3;
-      border-color: #2196f3;
+      color: var(--highlight);
+      border-color: var(--highlight);
     }
   }
 }
