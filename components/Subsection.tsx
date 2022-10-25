@@ -15,7 +15,7 @@ export default function Subsection(props: Props) {
       <div className={styles.icons}>
         {
           icons.map((icon, i) =>
-            <div className={styles.icon} key={i}>
+            <div key={i}>
               {icon}
             </div>
           )
