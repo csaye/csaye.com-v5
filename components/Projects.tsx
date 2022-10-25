@@ -6,15 +6,17 @@ export default function Projects() {
   return (
     <div className={styles.container}>
       <h1>Projects</h1>
-      <div className={styles.projects}>
-        {
-          projects.map((project, i) =>
-            <Project
-              project={project}
-              key={i}
-            />
-          )
-        }
+      <div className={styles.projectsWrapper}>
+        <div className={styles.projects}>
+          {
+            projects.map((project, i) =>
+              <Project
+                project={project}
+                key={i}
+              />
+            )
+          }
+        </div>
       </div>
     </div>
   );
