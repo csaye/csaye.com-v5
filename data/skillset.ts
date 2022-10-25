@@ -47,4 +47,21 @@ export const skillset: SkillsetSection[] = [
       }
     ]
   },
+  {
+    title: "Tools",
+    subsections: [
+      {
+        title: "Editors",
+        icons: ["VS Code", "Visual Studio"]
+      },
+      {
+        title: "Art",
+        icons: ["Aseprite", "GIMP"]
+      },
+      {
+        title: "Services",
+        icons: ["GitHub", "Trello", "SendGrid", "Stripe", "Algolia"]
+      }
+    ]
+  }
 ];
