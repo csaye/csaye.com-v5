@@ -1,6 +1,7 @@
 .container {
   background: #f3f3f3;
   overflow: auto;
+  padding: 0 20px;
 
   >h1 {
     text-align: center;
@@ -8,10 +9,16 @@
     font-size: 48px;
   }
 
-  >.projects {
-    margin: 20px;
+  >.projectsWrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+
+    >.projects {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1300px;
+    }
   }
 }
