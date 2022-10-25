@@ -26,4 +26,25 @@ export const skillset: SkillsetSection[] = [
       }
     ]
   },
+  {
+    title: "Web",
+    subsections: [
+      {
+        title: "Frameworks",
+        icons: ["React", "Next.js", "Angular"]
+      },
+      {
+        title: "Languages",
+        icons: ["JavaScript", "TypeScript"]
+      },
+      {
+        title: "Backend",
+        icons: ["Firebase", "Node.js"]
+      },
+      {
+        title: "Deployment",
+        icons: ["Vercel", "Netlify"]
+      }
+    ]
+  },
 ];
