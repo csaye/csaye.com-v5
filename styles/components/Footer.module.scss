@@ -1,10 +1,12 @@
 .container {
-  height: 80px;
+  height: var(--header);
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #000;
 
   >p {
     margin: 0;
+    color: #fff;
   }
 }
