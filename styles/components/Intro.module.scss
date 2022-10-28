@@ -5,6 +5,10 @@
   min-height: 500px;
   position: relative;
 
+  @media (max-width: 499.98px) {
+    padding: 20px 40px 40px 40px;
+  }
+
   >.hello {
     width: 50%;
     position: relative;
@@ -13,6 +17,18 @@
       font-weight: 400;
       font-size: 64px;
       margin: 0;
+
+      @media (max-width: 1199.98px) {
+        text-align: center;
+      }
+
+      @media (max-width: 575.98px) {
+        font-size: 48px;
+      }
+
+      @media (max-width: 499.98px) {
+        font-size: 36px;
+      }
 
       >b {
         font-weight: 600;
