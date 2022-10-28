@@ -8,7 +8,7 @@ type Props = {
 
 export default function Project(props: Props) {
   const { project } = props;
-  const { title, about, image, buttons } = project;
+  const { title, about, image, link, buttons, icons } = project;
 
   return (
     <div className={styles.container}>
@@ -28,8 +28,10 @@ export default function Project(props: Props) {
           />
         </a>
       </div>
-      <h1>{title}</h1>
-      <p>{about}</p>
+      <div className={styles.content}>
+        <h1>{title}</h1>
+        <p className={styles.icons}>{icons.join(' • ')}</p>
+        <p className={styles.about}>{about}</p>
         <div className={styles.buttons}>
           {
             buttons.map((button, i) =>
