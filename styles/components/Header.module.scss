@@ -17,6 +17,22 @@
     margin: 0;
     margin-left: 24px;
     font-weight: 900;
+
+    @media (max-width: 575.98px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 499.98px) {
+      &.big {
+        display: none;
+      }
+    }
+
+    @media (min-width: 500px) {
+      &.small {
+        display: none;
+      }
+    }
   }
 
   >button {
@@ -25,6 +41,7 @@
     background: transparent;
     font-size: 16px;
     margin-left: 30px;
+    color: #000;
 
     &:hover {
       text-decoration: underline;
