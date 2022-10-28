@@ -13,14 +13,20 @@ export default function Project(props: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.image}>
-        <Image
-          src={`/img/projects/${image}`}
-          layout="fill"
-          objectFit="contain"
-          placeholder="blur"
-          blurDataURL={`/img/projects/${image}`}
-          alt={image}
-        />
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            src={`/img/projects/${image}`}
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+            blurDataURL={`/img/projects/${image}`}
+            alt={image}
+          />
+        </a>
       </div>
       <h1>{title}</h1>
       <p>{about}</p>
