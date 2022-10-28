@@ -56,15 +56,17 @@ export default function Intro(props: Props) {
           and most of my projects have a focus on the web.
         </p>
         <hr />
-        <Link href="https://github.com/csaye">
-          <GitHub />csaye
-        </Link>
-        <Link href="https://linkedin.com/in/coopersaye">
-          <LinkedIn />coopersaye
-        </Link>
-        <Link href="https://twitter.com/coopercomputer">
-          <Twitter />CooperComputer
-        </Link>
+        <div className={styles.links}>
+          <Link href="https://github.com/csaye">
+            <GitHub />csaye
+          </Link>
+          <Link href="https://linkedin.com/in/coopersaye">
+            <LinkedIn />coopersaye
+          </Link>
+          <Link href="https://twitter.com/coopercomputer">
+            <Twitter />CooperComputer
+          </Link>
+        </div>
       </div>
       <div className={styles.latest}>
         <p>Check out my latest work!</p>
