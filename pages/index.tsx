@@ -7,12 +7,11 @@ import Skillset from '../components/Skillset';
 import styles from '../styles/pages/Index.module.scss';
 
 export default function Index() {
-  const introScrollRef = useRef<HTMLSpanElement>(null);
   const projectsScrollRef = useRef<HTMLSpanElement>(null);
   const skillsetScrollRef = useRef<HTMLSpanElement>(null);
 
   // section scroll functions
-  const introScroll = () => introScrollRef.current?.scrollIntoView();
+  const introScroll = () => window.scrollTo(0, 0);
   const projectsScroll = () => projectsScrollRef.current?.scrollIntoView();
   const skillsetScroll = () => skillsetScrollRef.current?.scrollIntoView();
 
@@ -23,7 +22,6 @@ export default function Index() {
         projectsScroll={projectsScroll}
         skillsetScroll={skillsetScroll}
       />
-      <span className={styles.scrollRef} ref={introScrollRef} />
       <Intro projectsScroll={projectsScroll} />
       <span className={styles.scrollRef} ref={skillsetScrollRef} />
       <Skillset />
