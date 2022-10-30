@@ -23,9 +23,13 @@ export default function Index() {
         skillsetScroll={skillsetScroll}
       />
       <Intro projectsScroll={projectsScroll} />
-      <span className={styles.scrollRef} ref={skillsetScrollRef} />
+      <span className={styles.scrollRef} ref={skillsetScrollRef} style={{
+        position: 'relative', display: 'block', bottom: '80px', left: '50%'
+      }} />
       <Skillset />
-      <span className={styles.scrollRef} ref={projectsScrollRef} />
+      <span className={styles.scrollRef} ref={projectsScrollRef} style={{
+        position: 'relative', display: 'block', bottom: '80px', left: '50%'
+      }} />
       <Projects />
       <Footer />
     </div>
