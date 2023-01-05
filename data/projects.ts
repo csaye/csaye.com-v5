@@ -1,7 +1,16 @@
+type ProjectButton = {
+  label: string;
+  link: string;
+};
+
 export type Project = {
   title: string;
   about: string;
   image: string;
+  link?: string;
+  buttons: ProjectButton[];
+  icons: string[];
+  type: string;
 };
 
 export const projects: Project[] = [
