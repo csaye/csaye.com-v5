@@ -632,12 +632,12 @@ export const projects: Project[] = [
   {
     title: "Bicycle",
     about: "A minimalist social media placing its users first. My first major web project, uses Firebase for authentication and data storage.",
-    link: "https://bicycle.social",
+    link: "https://bicycle-social.vercel.app",
     image: "bicycle.png",
     buttons: [
       {
         label: "Try it out",
-        link: "https://bicycle.social"
+        link: "https://bicycle-social.vercel.app"
       },
       {
         label: "GitHub",
