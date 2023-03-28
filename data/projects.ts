@@ -79,6 +79,83 @@ export const projects: Project[] = [
     ]
   },
   {
+    title: "Domain Hacks",
+    about: "A domain hack generator. A domain hack is a domain name that spells out a word. For example: internet → inter.net",
+    link: "https://www.coop.codes/domain-hacks",
+    image: "domainhacks.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://www.coop.codes/domain-hacks"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/coop.codes"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Whois",
+      "TypeScript",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "VSCode"
+    ]
+  },
+  {
+    title: "Cartridge",
+    about: "An experimental tile-based retro game builder. Hoping to expand one day with more content and social features.",
+    link: "https://cartridge.vercel.app",
+    image: "cartridge.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://cartridge.vercel.app"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/cartridge"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "VSCode"
+    ]
+  },
+  {
+    title: "Add a Word",
+    about: "Generates domain name ideas by adding words to a given keyword. Built to help brainstorm new domain names.",
+    link: "https://www.coop.codes/add-a-word",
+    image: "addaword.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://www.coop.codes/add-a-word"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/coop.codes"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Whois",
+      "TypeScript",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "VSCode"
+    ]
+  },
+  {
     title: "CodeCreatively",
     about: "A website for beginners to learn JavaScript by making and playing retro pixel games. Integrated into several schools and seeking further growth.",
     link: "https://www.codecreatively.com",
