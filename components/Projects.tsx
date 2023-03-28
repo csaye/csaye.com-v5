@@ -1,3 +1,4 @@
+import { Fade } from 'react-awesome-reveal';
 import { projects } from '../data/projects';
 import styles from '../styles/components/Projects.module.scss';
 import Project from './Project';
@@ -8,14 +9,16 @@ export default function Projects() {
       <h1>Projects</h1>
       <div className={styles.projectsWrapper}>
         <div className={styles.projects}>
-          {
-            projects.map((project, i) =>
-              <Project
-                project={project}
-                key={i}
-              />
-            )
-          }
+          <Fade triggerOnce fraction={0.5}>
+            {
+              projects.map((project, i) =>
+                <Project
+                  project={project}
+                  key={i}
+                />
+              )
+            }
+          </Fade>
         </div>
       </div>
     </div>
