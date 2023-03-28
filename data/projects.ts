@@ -10,10 +10,74 @@ export type Project = {
   link?: string;
   buttons: ProjectButton[];
   icons: string[];
-  type: string;
 };
 
 export const projects: Project[] = [
+  {
+    title: "MeetingBrew",
+    about: "A modern way to schedule your meetings. Select date and time ranges, send out the link to others, and find out when everyone is available.",
+    link: "https://www.meetingbrew.com",
+    image: "meetingbrew.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://www.meetingbrew.com"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Firebase",
+      "TypeScript",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "VSCode"
+    ]
+  },
+  {
+    title: "Homebound",
+    about: "An iOS app built to help University of Michigan students find carpools home for break. Hit 100 active users within 3 days of launch.",
+    link: "https://www.homeboundapp.com",
+    image: "homebound.png",
+    buttons: [
+      {
+        label: "App Store",
+        link: "https://www.homeboundapp.com"
+      }
+    ],
+    icons: [
+      "React Native",
+      "Expo",
+      "Google Maps Platform",
+      "Firebase",
+      "TypeScript",
+      "JavaScript",
+      "VSCode"
+    ]
+  },
+  {
+    title: "Rhythmatic",
+    about: "An AI-powered song recommender. Combines Spotify with the OpenAI API to generate customized music recommendations.",
+    link: "https://www.rhythmatic.ai",
+    image: "rhythmatic.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://www.rhythmatic.ai"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "OpenAI API",
+      "Spotify API",
+      "TypeScript",
+      "Vercel",
+      "CSS Modules",
+      "VSCode"
+    ]
+  },
   {
     title: "CodeCreatively",
     about: "A website for beginners to learn JavaScript by making and playing retro pixel games. Integrated into several schools and seeking further growth.",
@@ -35,8 +99,7 @@ export const projects: Project[] = [
       "CSS Modules",
       "Stripe",
       "VSCode"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "I-Acute (í.is)",
@@ -66,8 +129,7 @@ export const projects: Project[] = [
       "Vercel",
       "CSS Modules",
       "VSCode"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Megaphone",
@@ -92,8 +154,7 @@ export const projects: Project[] = [
       "Vercel",
       "CSS Modules",
       "VSCode"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Brainwave",
@@ -118,8 +179,7 @@ export const projects: Project[] = [
       "Vercel",
       "CSS Modules",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Devcomms",
@@ -145,8 +205,7 @@ export const projects: Project[] = [
       "Vercel",
       "CSS Modules",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Codetrain",
@@ -171,8 +230,7 @@ export const projects: Project[] = [
       "Vercel",
       "CSS Modules",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Pygolf",
@@ -191,8 +249,7 @@ export const projects: Project[] = [
       "JavaScript",
       "CSS Modules",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Pixel Engine",
@@ -218,8 +275,7 @@ export const projects: Project[] = [
       "Vercel",
       "CSS Modules",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Symbl",
@@ -240,8 +296,7 @@ export const projects: Project[] = [
       "Python",
       "Shell",
       "Atom"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "SleekScript",
@@ -264,8 +319,7 @@ export const projects: Project[] = [
       "CodeMirror",
       "CSS Modules",
       "Atom"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "GameScript",
@@ -286,8 +340,7 @@ export const projects: Project[] = [
       "Python",
       "Pygame",
       "IDLE"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "Daytrip",
@@ -313,8 +366,7 @@ export const projects: Project[] = [
       "Vercel",
       "CSS Modules",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "MapMake",
@@ -337,8 +389,7 @@ export const projects: Project[] = [
       "Firebase",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "MonoBuild",
@@ -358,8 +409,7 @@ export const projects: Project[] = [
     icons: [
       "Shell",
       "Atom"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "Devcomms Legacy",
@@ -384,8 +434,7 @@ export const projects: Project[] = [
       "PeerJS",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "FlexScript",
@@ -410,8 +459,7 @@ export const projects: Project[] = [
       "Java",
       "C++",
       "JavaScript"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "ImgScript",
@@ -431,8 +479,7 @@ export const projects: Project[] = [
     icons: [
       "Python",
       "Atom"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "Calendar",
@@ -455,8 +502,7 @@ export const projects: Project[] = [
       "Firebase",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "SimpleStore",
@@ -479,8 +525,7 @@ export const projects: Project[] = [
       "Firebase",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Mono3D",
@@ -501,8 +546,7 @@ export const projects: Project[] = [
       "MonoGame",
       "C#",
       "Visual Studio"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "Mono2D",
@@ -523,8 +567,7 @@ export const projects: Project[] = [
       "MonoGame",
       "C#",
       "Visual Studio"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "Meta Python",
@@ -540,8 +583,7 @@ export const projects: Project[] = [
     icons: [
       "Python",
       "IDLE"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "Widget Wall",
@@ -567,8 +609,7 @@ export const projects: Project[] = [
       "OpenWeather API",
       "Random Word API",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Python Highlights",
@@ -585,8 +626,7 @@ export const projects: Project[] = [
       "Python",
       "Pygame",
       "IDLE"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "MinScript",
@@ -602,8 +642,7 @@ export const projects: Project[] = [
     icons: [
       "Python",
       "IDLE"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "Countdown Tracker",
@@ -626,8 +665,7 @@ export const projects: Project[] = [
       "Firebase",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Bicycle",
@@ -650,8 +688,7 @@ export const projects: Project[] = [
       "Firebase",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Playlist Bot",
@@ -674,8 +711,7 @@ export const projects: Project[] = [
       "Spotify API",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Deserted",
@@ -704,8 +740,7 @@ export const projects: Project[] = [
       "Audacity",
       "Aseprite",
       "GIMP"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "Ticket Tracker",
@@ -728,8 +763,7 @@ export const projects: Project[] = [
       "Firebase",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Coding Challenges",
@@ -748,8 +782,7 @@ export const projects: Project[] = [
       "Java",
       "C++",
       "JavaScript"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "Jamming",
@@ -772,8 +805,7 @@ export const projects: Project[] = [
       "Spotify API",
       "CSS",
       "Atom"
-    ],
-    type: "web"
+    ]
   },
   {
     title: "Countdown",
@@ -794,8 +826,7 @@ export const projects: Project[] = [
       "Unity",
       "C#",
       "VSCode"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "2048 Live",
@@ -817,8 +848,7 @@ export const projects: Project[] = [
       "SDL2",
       "OpenCV",
       "VSCode"
-    ],
-    type: "other"
+    ]
   },
   {
     title: "Sorting Visualization",
@@ -839,8 +869,7 @@ export const projects: Project[] = [
       "Unity",
       "C#",
       "VSCode"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "Chess",
@@ -862,8 +891,7 @@ export const projects: Project[] = [
       "C#",
       "VSCode",
       "GIMP"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "A* Visualization",
@@ -885,8 +913,7 @@ export const projects: Project[] = [
       "C#",
       "VSCode",
       "GIMP"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "Diapixel",
@@ -908,8 +935,7 @@ export const projects: Project[] = [
       "C#",
       "VSCode",
       "GIMP"
-    ],
-    type: "game"
+    ]
   },
   {
     title: "Computeroid",
@@ -937,7 +963,6 @@ export const projects: Project[] = [
       "FL Studio",
       "BFXR",
       "GIMP"
-    ],
-    type: "game"
+    ]
   }
 ];
