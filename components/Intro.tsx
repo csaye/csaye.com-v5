@@ -1,6 +1,6 @@
 import { ArrowDownward, ArrowForward, Email, GitHub, LinkedIn } from '@mui/icons-material';
 import Image from 'next/image';
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import styles from '../styles/components/Intro.module.scss';
 
 type LinkProps = {
@@ -25,20 +25,14 @@ function Link(props: LinkProps) {
   );
 }
 
-const tooltipProps = {
-  arrow: true,
-  componentsProps: {
-    tooltip: { sx: { background: '#444' } },
-    arrow: { sx: { color: '#444' } }
-  }
-};
-
 type Props = {
   projectsScroll: () => void;
 };
 
 export default function Intro(props: Props) {
   const { projectsScroll } = props;
+
+  const [playerHovered, setPlayerHovered] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -79,22 +73,26 @@ export default function Intro(props: Props) {
         <div
           className={styles.player}
           onClick={projectsScroll}
+          onMouseOver={() => setPlayerHovered(true)}
+          onMouseLeave={() => setPlayerHovered(false)}
         >
-          <Image
-            src="/img/player.png"
-            width="384"
-            height="384"
-            alt="player.png"
-            unoptimized
-            priority
-          />
-          <Image
-            src="/img/player2.png"
-            width="384"
-            height="384"
-            alt="player.png"
-            unoptimized
-          />
+          {
+            !playerHovered ?
+              <Image
+                src="/img/player.png"
+                width="384"
+                height="384"
+                alt="player.png"
+                priority
+              /> :
+              <Image
+                src="/img/player2.png"
+                width="384"
+                height="384"
+                alt="player2.png"
+                priority
+              />
+          }
         </div>
       </div>
       <button
