@@ -9,7 +9,7 @@ export default function Projects() {
       <h1>Projects</h1>
       <div className={styles.projectsWrapper}>
         <div className={styles.projects}>
-          <Fade triggerOnce fraction={0.5}>
+          <Fade triggerOnce fraction={0.25}>
             {
               projects.map((project, i) =>
                 <Project
