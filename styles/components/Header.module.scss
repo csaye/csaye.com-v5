@@ -5,11 +5,12 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #fff;
   box-shadow: 0 0 0 #999;
-  transition: 0.1s;
+  background: transparent;
+  transition: 0.25s;
 
   &.top {
+    background: #fff;
     box-shadow: 0 0 4px #999;
   }
 
