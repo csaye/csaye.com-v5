@@ -1,7 +1,8 @@
 import { ArrowDownward, ArrowForward, Email, GitHub, LinkedIn } from '@mui/icons-material';
 import Image from 'next/image';
-import { ReactNode, useState } from 'react';
+import { ReactNode, RefObject, useEffect, useState } from 'react';
 import styles from '../styles/components/Intro.module.scss';
+import Background from './Background';
 
 type LinkProps = {
   href: string;
@@ -27,15 +28,32 @@ function Link(props: LinkProps) {
 
 type Props = {
   projectsScroll: () => void;
+  heightRef: RefObject<HTMLDivElement>;
 };
 
 export default function Intro(props: Props) {
-  const { projectsScroll } = props;
+  const { projectsScroll, heightRef } = props;
 
   const [playerHovered, setPlayerHovered] = useState(false);
+  const [height, setHeight] = useState(0);
+
+  // listen for height update
+  useEffect(() => {
+    function updateHeight() {
+      if (!heightRef.current) return;
+      setHeight(heightRef.current.getBoundingClientRect().height);
+    }
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
+    return () => window.removeEventListener('resize', updateHeight);
+  }, [heightRef]);
 
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={height ? { height: `calc(${height}px - var(--header))` } : undefined}
+    >
+      <Background />
       <div className={styles.hello}>
         <h1>
           <b>Hey there!</b><br />
