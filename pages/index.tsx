@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import Background from '../components/Background';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
@@ -10,6 +9,7 @@ import styles from '../styles/pages/Index.module.scss';
 export default function Index() {
   const projectsScrollRef = useRef<HTMLSpanElement>(null);
   const skillsetScrollRef = useRef<HTMLSpanElement>(null);
+  const heightRef = useRef<HTMLDivElement>(null);
 
   // section scroll functions
   const introScroll = () => window.scrollTo(0, 0);
@@ -18,13 +18,13 @@ export default function Index() {
 
   return (
     <div className={styles.container}>
-      <Background />
+      <div className={styles.heightRef} ref={heightRef} />
       <Header
         introScroll={introScroll}
         projectsScroll={projectsScroll}
         skillsetScroll={skillsetScroll}
       />
-      <Intro projectsScroll={projectsScroll} />
+      <Intro projectsScroll={projectsScroll} heightRef={heightRef} />
       <span className={styles.scrollRef} ref={skillsetScrollRef} style={{
         position: 'relative', display: 'block', bottom: '80px', left: '50%'
       }} />
