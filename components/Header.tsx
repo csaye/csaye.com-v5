@@ -27,8 +27,8 @@ export default function Header(props: Props) {
     <div className={
       isTop ? styles.container : `${styles.container} ${styles.top}`
     }>
-      <h1 className={styles.big}>Cooper Saye</h1>
-      <h1 className={styles.small}>CS</h1>
+      <h1 onClick={introScroll} className={styles.big}>Cooper Saye</h1>
+      <h1 onClick={introScroll} className={styles.small}>CS</h1>
       <span style={{ flexGrow: 1 }} />
       <button onClick={introScroll}>Home</button>
       <button onClick={skillsetScroll}>Skillset</button>
