@@ -17,6 +17,12 @@
 
     >div {
       text-align: left;
+      width: fit-content;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
     }
 
     &:after {

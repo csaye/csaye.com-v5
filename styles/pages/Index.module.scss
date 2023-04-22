@@ -1,4 +1,11 @@
 .container {
+  >.heightRef {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+  }
+
   >.scrollRef {
     position: relative;
     bottom: var(--header);
