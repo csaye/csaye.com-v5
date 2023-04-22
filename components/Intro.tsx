@@ -43,11 +43,11 @@ export default function Intro(props: Props) {
         </h1>
         <hr />
         <p className={styles.bio}>
-          I&apos;m a <u>Congressional App Challenge Winner</u> and{' '}
-          <u>computer science student</u> at the{' '}
-          <u>University of Michigan College of Engineering</u>.{' '}
-          I&apos;m a big fan of <u>creative coding</u>{' '}
-          and most of my projects have a focus on the web.
+          I&apos;m a student at the{' '}
+          <u>University of Michigan</u> pursuing a BSE in computer science.{' '}
+          I&apos;m passionate about <u>full-stack web development</u>,{' '}
+          <u>creative coding</u>, and <u>domain names</u>. Check out some of
+          my work below!
         </p>
         <hr />
         <div className={styles.links}>
