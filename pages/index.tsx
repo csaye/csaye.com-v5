@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import Background from '../components/Background';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
@@ -17,6 +18,7 @@ export default function Index() {
 
   return (
     <div className={styles.container}>
+      <Background />
       <Header
         introScroll={introScroll}
         projectsScroll={projectsScroll}
