@@ -1,5 +1,14 @@
 .container {
   position: absolute;
   inset: 0;
-  background-image: url('/img/grid.png');
+  top: calc(var(--header) * -1);
+  overflow: hidden;
+  z-index: -1;
+
+  >.content {
+    transform: rotateZ(-2deg);
+    background-image: url('/img/grid.png');
+    position: absolute;
+    inset: -64px;
+  }
 }
