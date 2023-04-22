@@ -79,6 +79,259 @@ export const projects: Project[] = [
     ]
   },
   {
+    title: "CodeCreatively",
+    about: "A website for beginners to learn JavaScript by making and playing retro pixel games. Integrated into several schools and seeking further growth.",
+    link: "https://www.codecreatively.com",
+    image: "codecreatively.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://www.codecreatively.com"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Firebase",
+      "TypeScript",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "Stripe",
+      "VSCode"
+    ]
+  },
+  {
+    title: "Deserted",
+    about: "Forage, build, and innovate on your new island. A creative, ambient survival game. Built in Unity over 3 months.",
+    link: "https://csaye.itch.io/deserted",
+    image: "deserted.png",
+    buttons: [
+      {
+        label: "Available Now",
+        link: "https://csaye.itch.io/deserted"
+      },
+      {
+        label: "Trailer",
+        link: "https://youtu.be/g8Ckftlqdfg"
+      },
+      {
+        label: "Soundtrack",
+        link: "https://soundcloud.com/csaye/sets/deserted"
+      }
+    ],
+    icons: [
+      "Unity",
+      "C#",
+      "VSCode",
+      "FL Studio",
+      "Audacity",
+      "Aseprite",
+      "GIMP"
+    ]
+  },
+  {
+    title: "Megaphone",
+    about: "A classroom communication forum for students and teachers. Won the Congressional App Challenge and was honored by Congressman Ted Lieu.",
+    link: "https://www.themegaphone.net",
+    image: "megaphone.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://www.themegaphone.net"
+      },
+      {
+        label: "Press release",
+        link: "https://lieu.house.gov/media-center/press-releases/rep-lieu-honors-winners-annual-congressional-app-challenge-1"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Firebase",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "VSCode"
+    ]
+  },
+  {
+    title: "I-Acute (í.is)",
+    about: "A URL shortener with one of the narrowest possible domains. Shorten URLs by length and width.",
+    link: "https://xn--eda.is",
+    image: "iacute.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://xn--eda.is"
+      },
+      {
+        label: "Article",
+        link: "https://www.coop.codes/i-acute"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/i-acute"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Firebase",
+      "TypeScript",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "VSCode"
+    ]
+  },
+  {
+    title: "Devcomms",
+    about: "Text chat with built-in developer widgets. Built to help coordinate teams of developers through a centralized tool.",
+    link: "https://devcomms.io",
+    image: "devcomms2.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://devcomms.io"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/CodeConvoy/devcomms"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "GitHub API",
+      "Firebase",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "Atom"
+    ]
+  },
+  {
+    title: "Codetrain",
+    about: "A retro browser game engine. Learn JavaScript while building games and exploring a community of projects.",
+    link: "https://codetrain.org",
+    image: "codetrain.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://codetrain.org"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/CodeWithGames/codetrain"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Firebase",
+      "JavaScript",
+      "Vercel",
+      "CSS Modules",
+      "Atom"
+    ]
+  },
+  {
+    title: "Daytrip",
+    about: "Explore any area with a randomly generated trip. Uses the Yelp API to look up activities and FullCalendar to manage scheduling.",
+    link: "https://daytrip.vercel.app",
+    image: "daytrip.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://daytrip.vercel.app"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/daytrip"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "Yelp API",
+      "FullCalendar",
+      "Vercel",
+      "CSS Modules",
+      "Atom"
+    ]
+  },
+  {
+    title: "MapMake",
+    about: "A collaborative, online tilemap editor. Built to help coordinate team tilemap creation.",
+    link: "https://csaye.com/mapmake",
+    image: "mapmake.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://csaye.com/mapmake"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/mapmake"
+      }
+    ],
+    icons: [
+      "React",
+      "JavaScript",
+      "Firebase",
+      "CSS",
+      "Atom"
+    ]
+  },
+  {
+    title: "FlexScript",
+    about: "A programming language that compiles into C#, C++, Python, Java, and JavaScript. Written in Python.",
+    link: "https://github.com/csaye/flexscript",
+    image: "flexscript.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://github.com/csaye/flexscript#installationcompilation"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/flexscript"
+      }
+    ],
+    icons: [
+      "Python",
+      "Shell",
+      "Atom",
+      "C#",
+      "Java",
+      "C++",
+      "JavaScript"
+    ]
+  },
+  {
+    title: "Mono3D",
+    about: "A 3D raycasting engine built in MonoGame. An extension of Mono2D. Features movement and view customizability.",
+    link: "https://github.com/csaye/mono3d",
+    image: "grid.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://github.com/csaye/mono3d#installationrunning"
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/csaye/mono3d"
+      }
+    ],
+    icons: [
+      "MonoGame",
+      "C#",
+      "Visual Studio"
+    ]
+  },
+  {
     title: "Domain Hacks",
     about: "A domain hack generator. A domain hack is a domain name that spells out a word. For example: internet → inter.net",
     link: "https://www.coop.codes/domain-hacks",
@@ -156,84 +409,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "CodeCreatively",
-    about: "A website for beginners to learn JavaScript by making and playing retro pixel games. Integrated into several schools and seeking further growth.",
-    link: "https://www.codecreatively.com",
-    image: "codecreatively.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://www.codecreatively.com"
-      }
-    ],
-    icons: [
-      "React",
-      "Next.js",
-      "Firebase",
-      "TypeScript",
-      "JavaScript",
-      "Vercel",
-      "CSS Modules",
-      "Stripe",
-      "VSCode"
-    ]
-  },
-  {
-    title: "I-Acute (í.is)",
-    about: "A URL shortener with one of the narrowest possible domains. Shorten URLs by length and width.",
-    link: "https://xn--eda.is",
-    image: "iacute.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://xn--eda.is"
-      },
-      {
-        label: "Article",
-        link: "https://www.coop.codes/i-acute"
-      },
-      {
-        label: "GitHub",
-        link: "https://github.com/csaye/i-acute"
-      }
-    ],
-    icons: [
-      "React",
-      "Next.js",
-      "Firebase",
-      "TypeScript",
-      "JavaScript",
-      "Vercel",
-      "CSS Modules",
-      "VSCode"
-    ]
-  },
-  {
-    title: "Megaphone",
-    about: "A classroom communication forum for students and teachers. Won the Congressional App Challenge and was honored by Congressman Ted Lieu.",
-    link: "https://www.themegaphone.net",
-    image: "megaphone.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://www.themegaphone.net"
-      },
-      {
-        label: "Press release",
-        link: "https://lieu.house.gov/media-center/press-releases/rep-lieu-honors-winners-annual-congressional-app-challenge-1"
-      }
-    ],
-    icons: [
-      "React",
-      "Next.js",
-      "Firebase",
-      "JavaScript",
-      "Vercel",
-      "CSS Modules",
-      "VSCode"
-    ]
-  },
-  {
     title: "Brainwave",
     about: "Rich and centralized idea development. Built to help teams brainstorm ideas on a synchronized sketchboard.",
     link: "https://brainwave.vercel.app",
@@ -246,57 +421,6 @@ export const projects: Project[] = [
       {
         label: "GitHub",
         link: "https://github.com/CodeConvoy/brainwave"
-      }
-    ],
-    icons: [
-      "React",
-      "Next.js",
-      "Firebase",
-      "JavaScript",
-      "Vercel",
-      "CSS Modules",
-      "Atom"
-    ]
-  },
-  {
-    title: "Devcomms",
-    about: "Text chat with built-in developer widgets. Built to help coordinate teams of developers through a centralized tool.",
-    link: "https://devcomms.io",
-    image: "devcomms2.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://devcomms.io"
-      },
-      {
-        label: "GitHub",
-        link: "https://github.com/CodeConvoy/devcomms"
-      }
-    ],
-    icons: [
-      "React",
-      "Next.js",
-      "GitHub API",
-      "Firebase",
-      "JavaScript",
-      "Vercel",
-      "CSS Modules",
-      "Atom"
-    ]
-  },
-  {
-    title: "Codetrain",
-    about: "A retro browser game engine. Learn JavaScript while building games and exploring a community of projects.",
-    link: "https://codetrain.org",
-    image: "codetrain.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://codetrain.org"
-      },
-      {
-        label: "GitHub",
-        link: "https://github.com/CodeWithGames/codetrain"
       }
     ],
     icons: [
@@ -420,55 +544,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "Daytrip",
-    about: "Explore any area with a randomly generated trip. Uses the Yelp API to look up activities and FullCalendar to manage scheduling.",
-    link: "https://daytrip.vercel.app",
-    image: "daytrip.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://daytrip.vercel.app"
-      },
-      {
-        label: "GitHub",
-        link: "https://github.com/csaye/daytrip"
-      }
-    ],
-    icons: [
-      "React",
-      "Next.js",
-      "JavaScript",
-      "Yelp API",
-      "FullCalendar",
-      "Vercel",
-      "CSS Modules",
-      "Atom"
-    ]
-  },
-  {
-    title: "MapMake",
-    about: "A collaborative, online tilemap editor. Built to help coordinate team tilemap creation.",
-    link: "https://csaye.com/mapmake",
-    image: "mapmake.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://csaye.com/mapmake"
-      },
-      {
-        label: "GitHub",
-        link: "https://github.com/csaye/mapmake"
-      }
-    ],
-    icons: [
-      "React",
-      "JavaScript",
-      "Firebase",
-      "CSS",
-      "Atom"
-    ]
-  },
-  {
     title: "MonoBuild",
     about: "A command-line tool for cross-platform building in MonoGame. Built for a lack of a simple MonoGame compilation tool.",
     link: "https://github.com/csaye/monobuild",
@@ -511,31 +586,6 @@ export const projects: Project[] = [
       "PeerJS",
       "CSS",
       "Atom"
-    ]
-  },
-  {
-    title: "FlexScript",
-    about: "A programming language that compiles into C#, C++, Python, Java, and JavaScript. Written in Python.",
-    link: "https://github.com/csaye/flexscript",
-    image: "flexscript.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://github.com/csaye/flexscript#installationcompilation"
-      },
-      {
-        label: "GitHub",
-        link: "https://github.com/csaye/flexscript"
-      }
-    ],
-    icons: [
-      "Python",
-      "Shell",
-      "Atom",
-      "C#",
-      "Java",
-      "C++",
-      "JavaScript"
     ]
   },
   {
@@ -602,27 +652,6 @@ export const projects: Project[] = [
       "Firebase",
       "CSS",
       "Atom"
-    ]
-  },
-  {
-    title: "Mono3D",
-    about: "A 3D raycasting engine built in MonoGame. An extension of Mono2D. Features movement and view customizability.",
-    link: "https://github.com/csaye/mono3d",
-    image: "grid.png",
-    buttons: [
-      {
-        label: "Try it out",
-        link: "https://github.com/csaye/mono3d#installationrunning"
-      },
-      {
-        label: "GitHub",
-        link: "https://github.com/csaye/mono3d"
-      }
-    ],
-    icons: [
-      "MonoGame",
-      "C#",
-      "Visual Studio"
     ]
   },
   {
@@ -788,35 +817,6 @@ export const projects: Project[] = [
       "Spotify API",
       "CSS",
       "Atom"
-    ]
-  },
-  {
-    title: "Deserted",
-    about: "Forage, build, and innovate on your new island. A creative, ambient survival game. Built in Unity over 3 months.",
-    link: "https://csaye.itch.io/deserted",
-    image: "deserted.png",
-    buttons: [
-      {
-        label: "Available Now",
-        link: "https://csaye.itch.io/deserted"
-      },
-      {
-        label: "Trailer",
-        link: "https://youtu.be/g8Ckftlqdfg"
-      },
-      {
-        label: "Soundtrack",
-        link: "https://soundcloud.com/csaye/sets/deserted"
-      }
-    ],
-    icons: [
-      "Unity",
-      "C#",
-      "VSCode",
-      "FL Studio",
-      "Audacity",
-      "Aseprite",
-      "GIMP"
     ]
   },
   {
