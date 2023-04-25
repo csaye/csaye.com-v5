@@ -16,7 +16,7 @@ export default function Header(props: Props) {
   useEffect(() => {
     // called on page scroll
     function onScroll() {
-      setIsTop(!window.scrollY);
+      setIsTop(window.scrollY <= 0);
     }
     // set up scroll event listener
     addEventListener('scroll', onScroll);
