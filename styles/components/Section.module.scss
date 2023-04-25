@@ -4,6 +4,7 @@
   padding: 20px;
   background: #eee;
   transition: 0.2s;
+  cursor: pointer;
 
   >h2 {
     margin: 0 0 12px 0;
@@ -20,8 +21,9 @@
     }
   }
 
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+  @media (min-width: 576px) {
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
