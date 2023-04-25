@@ -7,8 +7,10 @@
   transition: 0.2s;
   max-width: calc(100vw - 80px);
 
-  &:hover {
-    transform: scale(1.05);
+  @media (min-width: 576px) {
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   >.image {
