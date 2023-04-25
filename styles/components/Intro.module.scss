@@ -13,14 +13,14 @@
     width: 50%;
     position: relative;
 
+    @media (max-width: 1199.98px) {
+      text-align: center;
+    }
+
     >h1 {
       font-weight: 400;
       font-size: 64px;
       margin: 0;
-
-      @media (max-width: 1199.98px) {
-        text-align: center;
-      }
 
       @media (max-width: 575.98px) {
         font-size: 48px;
@@ -98,8 +98,11 @@
             align-items: center;
             position: relative;
             left: 0;
-            transition: 0.25s;
             padding-right: -24px;
+
+            @media (min-width: 1200px) {
+              transition: 0.25s;
+            }
 
             >svg {
               margin-right: 4px;
@@ -109,13 +112,15 @@
           &:hover {
             color: var(--highlight);
 
-            .content {
-              left: 24px;
-            }
+            @media (min-width: 1200px) {
+              .content {
+                left: 24px;
+              }
 
-            .arrow {
-              opacity: 1;
-              transform: scale(1);
+              .arrow {
+                opacity: 1;
+                transform: scale(1);
+              }
             }
           }
         }
