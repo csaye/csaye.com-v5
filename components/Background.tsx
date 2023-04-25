@@ -17,7 +17,7 @@ export default function Background() {
   return (
     <div className={styles.container}>
       <div
-        style={{ top: `-${scroll * 0.4 + 64}px` }}
+        style={{ top: `-${scroll * 0.2 + 64}px` }}
         className={styles.content}
       />
     </div>
