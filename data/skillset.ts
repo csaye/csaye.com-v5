@@ -10,12 +10,8 @@ export type SkillsetSection = {
 
 export const skillset: SkillsetSection[] = [
   {
-    title: "Games",
+    title: "Simulations",
     subsections: [
-      {
-        title: "Frameworks",
-        icons: ["Unity", "Pygame", "MonoGame"]
-      },
       {
         title: "Languages",
         icons: ["Python", "C#", "Java", "C++"]
@@ -23,11 +19,15 @@ export const skillset: SkillsetSection[] = [
       {
         title: "Audio",
         icons: ["FL Studio", "Audacity"]
-      }
+      },
+      {
+        title: "Frameworks",
+        icons: ["Unity", "Pygame", "MonoGame"]
+      },
     ]
   },
   {
-    title: "Web",
+    title: "Websites",
     subsections: [
       {
         title: "Frameworks",
@@ -51,16 +51,16 @@ export const skillset: SkillsetSection[] = [
     title: "Tools",
     subsections: [
       {
-        title: "Editors",
-        icons: ["VS Code", "Visual Studio"]
-      },
-      {
         title: "Art",
         icons: ["Aseprite", "GIMP"]
       },
       {
         title: "Services",
-        icons: ["GitHub", "Trello", "SendGrid", "Stripe", "Algolia"]
+        icons: ["GitHub", "Trello", "SendGrid", "Stripe", "OpenAI"]
+      },
+      {
+        title: "Editors",
+        icons: ["VS Code", "Visual Studio"]
       }
     ]
   }
