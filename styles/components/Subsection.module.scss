@@ -2,18 +2,6 @@
   display: flex;
   line-height: 28px;
 
-  @media (min-width: 576px) {
-    &:hover {
-      >h3 {
-        color: var(--highlight);
-      }
-
-      >.icons:after {
-        background: var(--highlight);
-      }
-    }
-  }
-
   >h3 {
     width: 50%;
     text-align: right;
@@ -29,12 +17,6 @@
 
     >div {
       text-align: left;
-
-      @media (min-width: 576px) {
-        &:hover {
-          color: var(--highlight);
-        }
-      }
     }
 
     &:after {
