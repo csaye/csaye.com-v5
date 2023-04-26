@@ -13,6 +13,7 @@ export default function Skillset() {
           )
         }
       </div>
+      <p>+ more</p>
     </div>
   );
 }
