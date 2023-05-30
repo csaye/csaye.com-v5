@@ -1,4 +1,4 @@
-import { ArrowDownward, ArrowForward, Email, GitHub, LinkedIn } from '@mui/icons-material';
+import { ArrowDownward, ArrowForward, Email, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import Image from 'next/image';
 import { ReactNode, RefObject, useEffect, useState } from 'react';
 import styles from '../styles/components/Intro.module.scss';
@@ -73,6 +73,9 @@ export default function Intro(props: Props) {
           </Link>
           <Link href="https://linkedin.com/in/coopersaye">
             <LinkedIn />coopersaye
+          </Link>
+          <Link href="https://twitter.com/CooperComputer">
+            <Twitter />coopercomputer
           </Link>
           <p className={styles.link}>
             <a href="mailto:cooper@saye.co">
