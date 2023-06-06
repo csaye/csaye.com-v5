@@ -45,3 +45,6 @@ next-env.d.ts
 /public/sleekscript
 /public/ticket-tracker
 /public/widget-wall
+
+# resume
+/public/resume.pdf
