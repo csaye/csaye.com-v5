@@ -14,11 +14,11 @@ export const skillset: SkillsetSection[] = [
     subsections: [
       {
         title: "Languages",
-        icons: ["Python", "C#", "Java", "C++"]
+        icons: ["Python", "C++", "C#"]
       },
       {
-        title: "Audio",
-        icons: ["FL Studio", "Audacity"]
+        title: "Audio/Visuals",
+        icons: ["FL Studio", "Audacity", "Aseprite"]
       },
       {
         title: "Frameworks",
@@ -27,40 +27,32 @@ export const skillset: SkillsetSection[] = [
     ]
   },
   {
-    title: "Websites",
+    title: "Apps",
     subsections: [
       {
         title: "Frameworks",
-        icons: ["React", "Next.js", "Angular"]
+        icons: ["React", "Next.js", "React Native"]
       },
       {
         title: "Languages",
-        icons: ["JavaScript", "TypeScript"]
+        icons: ["TypeScript", "JavaScript", "HTML5/CSS3"]
       },
       {
         title: "Backend",
-        icons: ["Firebase", "Node.js"]
+        icons: ["Firebase", "Vercel", "Node.js"]
       },
-      {
-        title: "Deployment",
-        icons: ["Vercel", "Netlify"]
-      }
     ]
   },
   {
-    title: "Tools",
+    title: "Other",
     subsections: [
       {
-        title: "Art",
-        icons: ["Aseprite", "GIMP"]
-      },
-      {
         title: "Services",
-        icons: ["GitHub", "Trello", "SendGrid", "Stripe", "OpenAI"]
+        icons: ["Git/GitHub", "Expo", "Stripe", "OpenAI", "Figma", "Trello"]
       },
       {
         title: "Editors",
-        icons: ["VS Code", "Visual Studio"]
+        icons: ["VS Code", "Atom", "Visual Studio"]
       }
     ]
   }
