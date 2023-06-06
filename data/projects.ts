@@ -14,6 +14,37 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "codefy.ai",
+    about: "A toolbox of powerful AI coding widgets built to help developers speed up their workflow. Achieved 2,500 user sign ups within two days of launch.",
+    link: "https://www.codefy.ai",
+    image: "codefyai.png",
+    buttons: [
+      {
+        label: "Try it out",
+        link: "https://www.codefy.ai"
+      },
+      {
+        label: "Product Hunt",
+        link: "https://www.producthunt.com/posts/codefy-ai"
+      },
+      {
+        label: "Demo",
+        link: "https://youtu.be/w_UYbcWf_oo"
+      }
+    ],
+    icons: [
+      "React",
+      "Next.js",
+      "Vercel",
+      "Firebase",
+      "OpenAI",
+      "Stripe",
+      "TypeScript",
+      "SASS Modules",
+      "VSCode"
+    ]
+  },
+  {
     title: "MeetingBrew",
     about: "A modern way to schedule your meetings. Select date and time ranges, send out the link to others, and find out when everyone is available.",
     link: "https://www.meetingbrew.com",
@@ -87,6 +118,10 @@ export const projects: Project[] = [
       {
         label: "Try it out",
         link: "https://www.codecreatively.com"
+      },
+      {
+        label: "Demo",
+        link: "https://youtu.be/G75DeY9P2dg"
       }
     ],
     icons: [
