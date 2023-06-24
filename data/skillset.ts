@@ -1,59 +1,59 @@
 export type SkillsetSubsection = {
-  title: string;
-  icons: string[];
+  title: string
+  icons: string[]
 }
 
 export type SkillsetSection = {
-  title: string;
-  subsections: SkillsetSubsection[];
+  title: string
+  subsections: SkillsetSubsection[]
 }
 
 export const skillset: SkillsetSection[] = [
   {
-    title: "Simulations",
+    title: 'Simulations',
     subsections: [
       {
-        title: "Languages",
-        icons: ["Python", "C++", "C#"]
+        title: 'Languages',
+        icons: ['Python', 'C++', 'C#'],
       },
       {
-        title: "Audio/Visuals",
-        icons: ["FL Studio", "Audacity", "Aseprite"]
+        title: 'Audio/Visuals',
+        icons: ['FL Studio', 'Audacity', 'Aseprite'],
       },
       {
-        title: "Frameworks",
-        icons: ["Unity", "Pygame", "MonoGame"]
+        title: 'Frameworks',
+        icons: ['Unity', 'Pygame', 'MonoGame'],
       },
-    ]
+    ],
   },
   {
-    title: "Apps",
+    title: 'Apps',
     subsections: [
       {
-        title: "Frameworks",
-        icons: ["React", "Next.js", "React Native"]
+        title: 'Frameworks',
+        icons: ['React', 'Next.js', 'React Native'],
       },
       {
-        title: "Languages",
-        icons: ["TypeScript", "JavaScript", "HTML5/CSS3"]
+        title: 'Languages',
+        icons: ['TypeScript', 'JavaScript', 'HTML5/CSS3'],
       },
       {
-        title: "Backend",
-        icons: ["Firebase", "Vercel", "Node.js"]
+        title: 'Backend',
+        icons: ['Firebase', 'Vercel', 'Node.js'],
       },
-    ]
+    ],
   },
   {
-    title: "Other",
+    title: 'Other',
     subsections: [
       {
-        title: "Services",
-        icons: ["Git/GitHub", "Expo", "Stripe", "OpenAI", "Figma", "Trello"]
+        title: 'Services',
+        icons: ['Git/GitHub', 'Expo', 'Stripe', 'OpenAI', 'Figma', 'Trello'],
       },
       {
-        title: "Editors",
-        icons: ["VS Code", "Atom", "Visual Studio"]
-      }
-    ]
-  }
-];
+        title: 'Editors',
+        icons: ['VS Code', 'Atom', 'Visual Studio'],
+      },
+    ],
+  },
+]
