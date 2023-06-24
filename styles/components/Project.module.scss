@@ -13,7 +13,7 @@
     }
   }
 
-  >.image {
+  > .image {
     width: 360px;
     height: 220px;
     position: relative;
@@ -21,25 +21,25 @@
     max-width: calc(100vw - 80px);
   }
 
-  >.content {
+  > .content {
     padding: 24px;
 
-    >h1 {
+    > h1 {
       font-weight: 800;
       margin: -4px 0 0 0;
     }
 
-    >.icons {
+    > .icons {
       color: #999;
       font-size: 14px;
       margin: 12px 0;
     }
 
-    >.about {
+    > .about {
       margin: 12px 0;
     }
 
-    >.buttons {
+    > .buttons {
       display: flex;
       align-items: center;
       justify-content: center;

@@ -6,12 +6,12 @@
   transition: 0.2s;
   cursor: pointer;
 
-  >h2 {
+  > h2 {
     margin: 0 0 12px 0;
     position: relative;
 
     &:after {
-      content: "";
+      content: '';
       background: #000;
       position: absolute;
       bottom: -6px;

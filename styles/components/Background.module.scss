@@ -5,7 +5,7 @@
   overflow: hidden;
   z-index: -1;
 
-  >.content {
+  > .content {
     transform: rotateZ(-2deg);
     background-image: url('/img/grid.png');
     position: absolute;

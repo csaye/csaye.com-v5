@@ -9,7 +9,7 @@
     padding: 20px 40px 40px 40px;
   }
 
-  >.hello {
+  > .hello {
     width: 50%;
     position: relative;
 
@@ -17,7 +17,7 @@
       text-align: center;
     }
 
-    >h1 {
+    > h1 {
       font-weight: 400;
       font-size: 64px;
       margin: 0;
@@ -30,12 +30,12 @@
         font-size: 36px;
       }
 
-      >b {
+      > b {
         font-weight: 600;
       }
     }
 
-    >hr {
+    > hr {
       border: 0;
       border-bottom: 1px solid #999;
 
@@ -43,7 +43,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%, calc(-50% + 0.5px));
-        content: "";
+        content: '';
         width: 8px;
         height: 8px;
         background: #222;
@@ -52,7 +52,7 @@
       }
     }
 
-    >.bio {
+    > .bio {
       line-height: 32px;
 
       u {
@@ -60,7 +60,7 @@
       }
     }
 
-    >.links {
+    > .links {
       @media (max-width: 1199.98px) {
         display: flex;
         justify-content: center;
@@ -72,7 +72,7 @@
         flex-direction: column;
       }
 
-      >.link {
+      > .link {
         @media (max-width: 499.98px) {
           margin: 0;
 
@@ -81,7 +81,7 @@
           }
         }
 
-        >a {
+        > a {
           display: flex;
           align-items: center;
           width: fit-content;
@@ -104,7 +104,7 @@
               transition: 0.25s;
             }
 
-            >svg {
+            > svg {
               margin-right: 4px;
             }
           }
@@ -134,24 +134,24 @@
     }
   }
 
-  >.latest {
+  > .latest {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    >p {
+    > p {
       margin: -16px 0 0 0;
       font-size: 24px;
     }
 
-    >svg {
+    > svg {
       font-size: 32px;
       margin: 16px 0;
     }
 
-    >.player {
+    > .player {
       image-rendering: pixelated;
       cursor: pointer;
     }
@@ -161,7 +161,7 @@
     }
   }
 
-  >.scrollButton {
+  > .scrollButton {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

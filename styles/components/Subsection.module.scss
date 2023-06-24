@@ -2,7 +2,7 @@
   display: flex;
   line-height: 28px;
 
-  >h3 {
+  > h3 {
     width: 50%;
     text-align: right;
     font-size: 16px;
@@ -10,17 +10,17 @@
     margin: 0;
   }
 
-  >.icons {
+  > .icons {
     width: 50%;
     position: relative;
     padding-left: 8px;
 
-    >div {
+    > div {
       text-align: left;
     }
 
     &:after {
-      content: "";
+      content: '';
       background: #000;
       position: absolute;
       width: 2px;

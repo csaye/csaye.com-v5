@@ -3,17 +3,17 @@
   overflow: auto;
   padding: 0 20px;
 
-  >h1 {
+  > h1 {
     text-align: center;
     margin: 32px 0 0 0;
     font-size: 48px;
   }
 
-  >.projectsWrapper {
+  > .projectsWrapper {
     display: flex;
     justify-content: center;
 
-    >.projects {
+    > .projects {
       margin: 20px;
       display: flex;
       flex-wrap: wrap;
