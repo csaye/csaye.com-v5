@@ -15,9 +15,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "codefy.ai",
-    about: "A toolbox of powerful AI coding widgets built to help developers speed up their workflow. Achieved 2,500 user sign ups within two days of launch.",
     link: "https://www.codefy.ai",
     image: "codefyai.png",
+    about: "A toolbox of powerful AI coding widgets built to help developers speed up their workflow. Achieved 5,000 user sign ups and 80+ subscriptions in two weeks.",
     buttons: [
       {
         label: "Try it out",
