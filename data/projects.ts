@@ -232,12 +232,12 @@ export const projects: Project[] = [
     title: 'Devcomms',
     about:
       'Text chat with built-in developer widgets. Built to help coordinate teams of developers through a centralized tool.',
-    link: 'https://devcomms.io',
+    link: 'https://devcomms.vercel.app',
     image: 'devcomms2.png',
     buttons: [
       {
         label: 'Try it out',
-        link: 'https://devcomms.io',
+        link: 'https://devcomms.vercel.app',
       },
       {
         label: 'GitHub',
@@ -585,12 +585,12 @@ export const projects: Project[] = [
     title: 'Devcomms Legacy',
     about:
       'Team communication and coordination all in one place. Old version of the project, written in vanilla React.',
-    link: 'https://devcomms.io',
+    link: 'https://devcomms.vercel.app',
     image: 'devcomms.png',
     buttons: [
       {
         label: 'Try it out',
-        link: 'https://devcomms.io',
+        link: 'https://devcomms.vercel.app',
       },
       {
         label: 'GitHub',
