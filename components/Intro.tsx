@@ -48,7 +48,7 @@ export default function Intro(props: Props) {
         <p className={styles.bio}>
           I’m a passionate developer working as a software engineering intern at{' '}
           <u>Ramp</u> and studying computer science at the{' '}
-          <u>University of Michigan</u>. Check out some of my work below! &darr;
+          <u>University of Michigan</u>. Check out some of my work below!
         </p>
         <hr />
         <div className={styles.links}>

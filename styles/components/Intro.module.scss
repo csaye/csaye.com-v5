@@ -2,7 +2,7 @@
   display: flex;
   height: calc(100vh - var(--header));
   padding: 60px;
-  min-height: 500px;
+  min-height: 550px;
   position: relative;
 
   @media (max-width: 499.98px) {
@@ -37,6 +37,7 @@
     > hr {
       border: 0;
       border-bottom: 1px solid #999;
+      margin: 20px 0;
 
       &::after {
         position: absolute;
