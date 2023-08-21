@@ -10,23 +10,22 @@
   }
 
   > .hello {
-    width: 50%;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
     position: relative;
-
-    @media (max-width: 1199.98px) {
-      text-align: center;
-    }
+    text-align: center;
 
     > h1 {
       font-weight: 400;
       font-size: 64px;
       margin: 0;
 
-      @media (max-width: 575.98px) {
+      @media (max-width: 767.98px) {
         font-size: 48px;
       }
 
-      @media (max-width: 499.98px) {
+      @media (max-width: 575.98px) {
         font-size: 36px;
       }
 
@@ -47,7 +46,7 @@
         width: 8px;
         height: 8px;
         background: #222;
-        border: 4px solid #fff;
+        border: 4px solid var(--background);
         border-radius: 50%;
       }
     }
@@ -55,109 +54,34 @@
     > .bio {
       line-height: 32px;
 
+      @media (max-width: 575.98px) {
+        font-size: 14px;
+      }
+
       u {
         text-decoration-style: dotted;
       }
     }
 
     > .links {
-      @media (max-width: 1199.98px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
 
-      @media (max-width: 499.98px) {
-        flex-direction: column;
-      }
+      > a {
+        > svg {
+          font-size: 64px;
 
-      > .link {
-        @media (max-width: 499.98px) {
-          margin: 0;
-
-          &:first-of-type {
-            margin-top: 1em;
+          @media (max-width: 575.98px) {
+            font-size: 48px;
           }
         }
 
-        > a {
-          display: flex;
-          align-items: center;
-          width: fit-content;
-
-          .arrow {
-            opacity: 0;
-            transition: 0.25s;
-            transform: scale(0);
-            position: absolute;
-          }
-
-          .content {
-            display: flex;
-            align-items: center;
-            position: relative;
-            left: 0;
-            padding-right: -24px;
-
-            @media (min-width: 1200px) {
-              transition: 0.25s;
-            }
-
-            > svg {
-              margin-right: 4px;
-            }
-          }
-
-          &:hover {
-            color: var(--highlight);
-
-            @media (min-width: 1200px) {
-              .content {
-                left: 24px;
-              }
-
-              .arrow {
-                opacity: 1;
-                transform: scale(1);
-              }
-            }
-          }
+        &:hover {
+          color: var(--highlight);
         }
       }
-    }
-
-    @media (max-width: 1199.98px) {
-      width: 100%;
-      max-width: 660px;
-      margin: 0 auto;
-    }
-  }
-
-  > .latest {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    > p {
-      margin: -16px 0 0 0;
-      font-size: 24px;
-    }
-
-    > svg {
-      font-size: 32px;
-      margin: 16px 0;
-    }
-
-    > .player {
-      image-rendering: pixelated;
-      cursor: pointer;
-    }
-
-    @media (max-width: 1199.98px) {
-      display: none;
     }
   }
 

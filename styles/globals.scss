@@ -2,6 +2,7 @@
   --header: 80px;
   --highlight: #2196f3;
   --hightlightHover: #3f51b5;
+  --background: #fff;
 }
 
 * {
@@ -13,6 +14,11 @@ html,
 body {
   padding: 0;
   margin: 0;
+}
+
+html,
+body,
+button {
   font-family: 'Inter', sans-serif;
 }
 
@@ -23,7 +29,6 @@ a {
 
 button {
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
 }
 
 .url {
