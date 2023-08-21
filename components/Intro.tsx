@@ -1,33 +1,13 @@
 import {
   ArrowDownward,
-  ArrowForward,
   Email,
   GitHub,
   LinkedIn,
   Twitter,
 } from '@mui/icons-material'
-import Image from 'next/image'
-import { ReactNode, RefObject, useEffect, useState } from 'react'
+import { RefObject, useEffect, useState } from 'react'
 import styles from '../styles/components/Intro.module.scss'
 import Background from './Background'
-
-type LinkProps = {
-  href: string
-  children: ReactNode
-}
-
-function Link(props: LinkProps) {
-  const { href, children } = props
-
-  return (
-    <p className={styles.link}>
-      <a href={href} target='_blank' rel='noopener noreferrer'>
-        <ArrowForward className={styles.arrow} />
-        <span className={styles.content}>{children}</span>
-      </a>
-    </p>
-  )
-}
 
 type Props = {
   projectsScroll: () => void
@@ -37,7 +17,6 @@ type Props = {
 export default function Intro(props: Props) {
   const { projectsScroll, heightRef } = props
 
-  const [playerHovered, setPlayerHovered] = useState(false)
   const [height, setHeight] = useState(0)
 
   // listen for height update
@@ -63,66 +42,40 @@ export default function Intro(props: Props) {
         <h1>
           <b>Hey there!</b>
           <br />
-          I&apos;m Cooper Saye.
+          I’m Cooper Saye.
         </h1>
         <hr />
         <p className={styles.bio}>
-          I&apos;m passionate about <u>full-stack</u>, <u>creative coding</u>,
-          and <u>domain names</u>. I&apos;m currently working as a software
-          engineering intern at <u>Ramp</u> and studying computer science at the{' '}
-          <u>University of Michigan</u>. Check out some of my work below!
+          I’m a passionate developer working as a software engineering intern at{' '}
+          <u>Ramp</u> and studying computer science at the{' '}
+          <u>University of Michigan</u>. Check out some of my work below! &darr;
         </p>
         <hr />
         <div className={styles.links}>
-          <Link href='https://github.com/csaye'>
+          <a
+            href='https://github.com/csaye'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <GitHub />
-            csaye
-          </Link>
-          <Link href='https://linkedin.com/in/coopersaye'>
+          </a>
+          <a
+            href='https://linkedin.com/in/coopersaye'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <LinkedIn />
-            coopersaye
-          </Link>
-          <Link href='https://twitter.com/CooperComputer'>
+          </a>
+          <a
+            href='https://twitter.com/CooperComputer'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <Twitter />
-            coopercomputer
-          </Link>
-          <p className={styles.link}>
-            <a href='mailto:cooper@saye.co'>
-              <ArrowForward className={styles.arrow} />
-              <span className={styles.content}>
-                <Email />
-                cooper@saye.co
-              </span>
-            </a>
-          </p>
-        </div>
-      </div>
-      <div className={styles.latest}>
-        <p>Check out my latest work!</p>
-        <ArrowDownward />
-        <div
-          className={styles.player}
-          onClick={projectsScroll}
-          onMouseOver={() => setPlayerHovered(true)}
-          onMouseLeave={() => setPlayerHovered(false)}
-        >
-          {!playerHovered ? (
-            <Image
-              src='/img/player.png'
-              width='384'
-              height='384'
-              alt='player.png'
-              priority
-            />
-          ) : (
-            <Image
-              src='/img/player2.png'
-              width='384'
-              height='384'
-              alt='player2.png'
-              priority
-            />
-          )}
+          </a>
+          <a href='mailto:cooper@saye.co'>
+            <Email />
+          </a>
         </div>
       </div>
       <button className={styles.scrollButton} onClick={projectsScroll}>
