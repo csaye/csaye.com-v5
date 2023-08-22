@@ -27,7 +27,7 @@ export const skillset: SkillsetSection[] = [
     ],
   },
   {
-    title: 'Apps',
+    title: 'Web/Mobile',
     subsections: [
       {
         title: 'Frameworks',
@@ -44,7 +44,7 @@ export const skillset: SkillsetSection[] = [
     ],
   },
   {
-    title: 'Other',
+    title: 'Tools',
     subsections: [
       {
         title: 'Services',
