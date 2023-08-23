@@ -5,7 +5,7 @@ import {
   LinkedIn,
   Twitter,
 } from '@mui/icons-material'
-import { RefObject, useEffect, useState } from 'react'
+import { type ReactNode, type RefObject, useEffect, useState } from 'react'
 import styles from '../styles/components/Intro.module.scss'
 import Background from './Background'
 
@@ -46,34 +46,24 @@ export default function Intro(props: Props) {
         </h1>
         <hr />
         <p className={styles.bio}>
-          I’m a passionate software engineer currently working at <u>Ramp</u>{' '}
-          and studying computer science at the <u>University of Michigan</u>.
+          I’m a passionate software engineer currently working at{' '}
+          <OutLink href='https://ramp.com/'>Ramp</OutLink> and studying computer
+          science at the{' '}
+          <OutLink href='https://umich.edu/'>University of Michigan</OutLink>.
           <br />
           Check out some of my work below!
         </p>
         <hr />
         <div className={styles.links}>
-          <a
-            href='https://github.com/csaye'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <OutLink href='https://github.com/csaye'>
             <GitHub />
-          </a>
-          <a
-            href='https://linkedin.com/in/coopersaye'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          </OutLink>
+          <OutLink href='https://linkedin.com/in/coopersaye'>
             <LinkedIn />
-          </a>
-          <a
-            href='https://twitter.com/CooperComputer'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          </OutLink>
+          <OutLink href='https://twitter.com/CooperComputer'>
             <Twitter />
-          </a>
+          </OutLink>
           <a href='mailto:cooper@saye.co'>
             <Email />
           </a>
@@ -83,5 +73,13 @@ export default function Intro(props: Props) {
         <ArrowDownward />
       </button>
     </div>
+  )
+}
+
+function OutLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a href={href} target='_blank' rel='noopener noreferrer'>
+      {children}
+    </a>
   )
 }

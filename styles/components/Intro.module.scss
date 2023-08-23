@@ -59,8 +59,16 @@
         font-size: 14px;
       }
 
-      u {
-        text-decoration-style: dotted;
+      a {
+        text-decoration: underline;
+
+        &:not(:hover) {
+          text-decoration-style: dotted;
+        }
+
+        &:hover {
+          color: var(--highlight);
+        }
       }
     }
 
