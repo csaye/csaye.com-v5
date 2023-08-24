@@ -46,9 +46,9 @@ export default function Intro(props: Props) {
         </h1>
         <hr />
         <p className={styles.bio}>
-          I’m a passionate software engineer currently working at{' '}
+          I’m a passionate software engineer working at{' '}
           <OutLink href='https://ramp.com/'>Ramp</OutLink> and studying computer
-          science at the{' '}
+          science and mathematics at the{' '}
           <OutLink href='https://umich.edu/'>University of Michigan</OutLink>.
           <br />
           Check out some of my work below!
