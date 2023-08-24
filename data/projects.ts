@@ -201,13 +201,9 @@ export const projects: Project[] = [
     title: 'I-Acute (í.is)',
     about:
       'A URL shortener with one of the narrowest possible domains. Shorten URLs by length and width.',
-    link: 'https://xn--eda.is',
+    link: 'https://www.coop.codes/i-acute',
     image: 'iacute.png',
     buttons: [
-      {
-        label: 'Try it out',
-        link: 'https://xn--eda.is',
-      },
       {
         label: 'Article',
         link: 'https://www.coop.codes/i-acute',
