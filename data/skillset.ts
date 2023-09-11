@@ -35,7 +35,7 @@ export const skillset: SkillsetSection[] = [
       },
       {
         title: 'Languages',
-        icons: ['TypeScript', 'JavaScript', 'HTML5/CSS3'],
+        icons: ['TypeScript', 'JavaScript', 'HTML/CSS'],
       },
       {
         title: 'Backend',
